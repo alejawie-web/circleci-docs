@@ -86,7 +86,7 @@ The OpenID Connect ID tokens also contain some https://openid.net/specs/openid-c
 | The reference to the change that triggered the pipeline. Its value is a string similar to `refs/heads/main`. This is not present for pipelines triggered by custom webhooks.
 
 | `oidc.circleci.com/vcs-sha`
-| The git commit SHA that triggered the pipeline. This is the full commit hash. Not present for pipelines without VCS information.
+| The git commit SHA that triggered the pipeline. Its value is a string containing the full commit hash. This is not present for pipelines triggered by custom webhooks.
 
 | `oidc.circleci.com/context-ids`
 | An array of strings containing UUIDs that identify the context(s) used in the job. Currently, just one context is supported.
